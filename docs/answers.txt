@@ -18,7 +18,7 @@ d)	Useful to help divide code, i.e branching to fix a bug and then merging the b
 
 e) git Status shows the working tree status while git log shows commit logs
 
-f)
+f)git log --follow Weapon.h
 
 g)git log --grep='file'
 
