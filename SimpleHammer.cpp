@@ -7,8 +7,12 @@
 
 double SimpleHammer:: hit(double armor)
 {
-	double damage = hitPoints - ()
-	if (damage<0)
-		return 0;
-	return damage; 
+	if(armor > 30)
+	{
+		double damage = armor - hitPoints;
+		if (damage<0)
+			return 0;
+		return damage; 
+	}
+	return 0; 
 }
