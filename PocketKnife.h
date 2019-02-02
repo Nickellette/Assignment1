@@ -9,6 +9,12 @@
 #ifndef POCKETKNIFE_H
 #define POCKETKNIFE_H
 
+/*
+ * defines Pocket knife 
+ * hitpoints 10
+ * ignores 70% of armor
+ */
+
 class PocketKnife : public Weapon{
 
 	public: 
