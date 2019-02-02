@@ -6,7 +6,8 @@
 #inlcude "CrazyRandomSword.h"
 
 double CrazyRandomSword::hit(double armor){
-	double damage = hitPoints - (armor * /* randomly generated number*/)
+	double random = 1 - (rand()%(75+1-2)+2)/100.0; 
+	double damage = hitPoints - (armor * random)
 	if(damage < 0)
 		return 0;
 	return damage;
