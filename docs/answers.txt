@@ -1,32 +1,38 @@
-a) 
-	Counting objects: 7, done.
-	Delta compression using up to 4 threads.
-	Compressing objects: 100% (5/5), done.
-	Writing objects: 100% (7/7), 733 bytes | 104.00 KiB/s, done.
-	Total 7 (delta 2), reused 0 (delta 0)
-	remote: Resolving deltas: 100% (2/2), completed with 1 local object.
-	To https://github.com/Nickellette/Assignment1.git
-	   3d373c9..90b4b06  master -> master
+3E
 
-b) 5, git shortlog --summary 
+	a) 
+		Counting objects: 7, done.
+		Delta compression using up to 4 threads.
+		Compressing objects: 100% (5/5), done.
+		Writing objects: 100% (7/7), 733 bytes | 104.00 KiB/s, done.
+		Total 7 (delta 2), reused 0 (delta 0)
+		remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+		To https://github.com/Nickellette/Assignment1.git
+		   3d373c9..90b4b06  master -> master
 
-c)Thu Jan 10 16:45:38 2019 
-	git log -- .gitignore
+	b) 5, git shortlog --summary 
 
-d)	Useful to help divide code, i.e branching to fix a bug and then merging the bugfix back to the master branch.
-	Also hepful when to people are working on the same code, that can also later be merged
+	c)Thu Jan 10 16:45:38 2019 
+		git log -- .gitignore
 
-e) git Status shows the working tree status while git log shows commit logs
+	d)	Useful to help divide code, i.e branching to fix a bug and then merging the bugfix back to the master branch.
+		Also hepful when to people are working on the same code, that can also later be merged
 
-f)git log --follow Weapon.h
+	e) git Status shows the working tree status while git log shows commit logs
 
-g)git log --grep='file'
+	f)git log --follow Weapon.h
 
-h)
-	(I) When an a class(a derived class) inherits everything in its parent class, all of it properties. 
-	(II) Allows objects to have different internal structues but share the same interface
-	(III) Putting data and functions together to create a class, only functions within the class has access to it's data
+	g)git log --grep='file'
 
-i) The major difference between these two workflows are that, Dictator and Lieutenants has one central repository where as in Intergration manager each developer has their own public respositiry. Each developer can make their own push and pulls to ther own public repo, then conflicy resoultion is done by the intergration manager. Where as in the other, devlopers push to lieutents, who then push to the dictator who is the only one who can push to the central repo. 
+	h)
+		(I) When an a class(a derived class) inherits everything in its parent class, all of it properties. 
+		(II) Allows objects to have different internal structues but share the same interface
+		(III) Putting data and functions together to create a class, only functions within the class has access to it's data
 
-j) The dictator and lieutenants workflow would benfit a team of 100 more than centralized because it will definetly have less bugs. There will be more error checking, seeing as how developers have to push to the lieutenant repo that solves conflicts, which is then pushed to the dictator repo who also solves any conflits, then it is pushed to the central repo.
+	i) The major difference between these two workflows are that, Dictator and Lieutenants has one central repository where as in Intergration manager each developer has their own public respositiry. Each developer can make their own push and pulls to ther own public repo, then conflicy resoultion is done by the intergration manager. Where as in the other, devlopers push to lieutents, who then push to the dictator who is the only one who can push to the central repo. 
+
+	j) The dictator and lieutenants workflow would benfit a team of 100 more than centralized because it will definetly have less bugs. There will be more error checking, seeing as how developers have to push to the lieutenant repo that solves conflicts, which is then pushed to the dictator repo who also solves any conflits, then it is pushed to the central repo.
+
+5
+	This prototype uses both polymorphism and encapulation. All of the weapons within the game are implementaed using classes, which basically encapaulates data that makes the object/weapon. Polymorphism is used by the weapons, each weapon has the same interface from its parent class "Weapon", but each does it's own damage. For instance a Pocket Knife wont hurt you as much as a Spear would.
+	
